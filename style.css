@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ar;
+  height: 100vh;
+  background: linear-gradient(
+    110deg,
+    rgba(120, 229, 215, 1) 0%,
+    rgba(156, 177, 229, 1) 96%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#todo__heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: white;
+}
+
+#todo__heading h1 {
+  font-size: 42px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#todo__heading i {
+  font-size: 56px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#todo__add {
+  display: flex;
+  gap: 10px;
+}
+
+#todo__add input {
+  width: 260px;
+  padding: 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+#todo__add button {
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(37, 142, 246);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#todo__list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  width: 320px;
+  position: relative;
+  padding: 11px;
+}
+
+#todo__list li p {
+  margin-right: 100px;
+}
+#todo__list li button {
+  background: red;
+  color: white;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  padding: 20px;
+}
+#todo__list li button i {
+  background: red;
+  color: black;
+}
